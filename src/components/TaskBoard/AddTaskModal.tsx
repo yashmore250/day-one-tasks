@@ -5,6 +5,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
   DialogFooter,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -114,6 +115,9 @@ export const AddTaskModal = ({
       <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle>{editingTask ? 'Edit Task' : 'Add New Task'}</DialogTitle>
+          <DialogDescription>
+            {editingTask ? 'Update task details below' : 'Fill in the details to create a new task'}
+          </DialogDescription>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4">
