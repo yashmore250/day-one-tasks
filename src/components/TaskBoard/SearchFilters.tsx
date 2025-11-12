@@ -78,14 +78,16 @@ export const SearchFilters = ({
         <div>
           <Label htmlFor="assignee">Assignee</Label>
           <Select
-            value={filters.assignee}
-            onValueChange={(value) => onFiltersChange({ ...filters, assignee: value })}
+            value={filters.assignee || 'all'}
+            onValueChange={(value) => 
+              onFiltersChange({ ...filters, assignee: value === 'all' ? '' : value })
+            }
           >
             <SelectTrigger id="assignee">
               <SelectValue placeholder="All assignees" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All assignees</SelectItem>
+              <SelectItem value="all">All assignees</SelectItem>
               {assignees.map((assignee) => (
                 <SelectItem key={assignee} value={assignee}>
                   {assignee}
@@ -98,16 +100,19 @@ export const SearchFilters = ({
         <div>
           <Label htmlFor="priority">Priority</Label>
           <Select
-            value={filters.priority}
+            value={filters.priority || 'all'}
             onValueChange={(value) =>
-              onFiltersChange({ ...filters, priority: value as TaskPriority | '' })
+              onFiltersChange({ 
+                ...filters, 
+                priority: value === 'all' ? '' : (value as TaskPriority)
+              })
             }
           >
             <SelectTrigger id="priority">
               <SelectValue placeholder="All priorities" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All priorities</SelectItem>
+              <SelectItem value="all">All priorities</SelectItem>
               <SelectItem value="high">High</SelectItem>
               <SelectItem value="medium">Medium</SelectItem>
               <SelectItem value="low">Low</SelectItem>
