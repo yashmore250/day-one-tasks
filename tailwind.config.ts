@@ -57,6 +57,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        priority: {
+          high: "hsl(var(--priority-high))",
+          medium: "hsl(var(--priority-medium))",
+          low: "hsl(var(--priority-low))",
+        },
+        status: {
+          todo: "hsl(var(--status-todo))",
+          inprogress: "hsl(var(--status-inprogress))",
+          completed: "hsl(var(--status-completed))",
+        },
+        column: "hsl(var(--column-bg))",
+        board: "hsl(var(--board-bg))",
+        tag: {
+          bg: "hsl(var(--tag-bg))",
+          text: "hsl(var(--tag-text))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
