@@ -73,6 +73,9 @@ export default {
           bg: "hsl(var(--tag-bg))",
           text: "hsl(var(--tag-text))",
         },
+        filter: {
+          bg: "hsl(var(--filter-bg))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

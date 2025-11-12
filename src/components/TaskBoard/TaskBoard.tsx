@@ -60,6 +60,7 @@ export const TaskBoard = () => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
+  const [filtersVisible, setFiltersVisible] = useState(false);
 
   const handleAddTask = (task: Omit<Task, 'id' | 'createdAt'>) => {
     const newTask: Task = {
@@ -153,6 +154,8 @@ export const TaskBoard = () => {
           onFiltersChange={setFilters}
           assignees={allAssignees}
           tags={allTags}
+          isVisible={filtersVisible}
+          onToggle={() => setFiltersVisible(!filtersVisible)}
         />
 
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">

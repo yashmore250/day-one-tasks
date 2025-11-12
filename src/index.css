@@ -8,94 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 222 47% 11%;
+    /* Dark Shaded Theme - Default */
+    --background: 220 15% 12%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 220 15% 17%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 220 15% 15%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 217 91% 60%;
+    --primary: 195 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 17% 93%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 220 10% 25%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 210 17% 93%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 12% 20%;
+    --muted-foreground: 215 10% 60%;
 
-    --accent: 210 17% 93%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 195 100% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 220 12% 25%;
+    --input: 220 12% 20%;
+    --ring: 195 100% 50%;
 
     --radius: 0.5rem;
 
     /* Task Board Colors */
-    --priority-high: 0 84% 60%;
-    --priority-medium: 36 100% 50%;
-    --priority-low: 142 71% 45%;
+    --priority-high: 0 70% 55%;
+    --priority-medium: 36 95% 50%;
+    --priority-low: 142 60% 45%;
     
-    --status-todo: 210 17% 93%;
-    --status-inprogress: 217 91% 60%;
-    --status-completed: 142 71% 45%;
+    --status-todo: 220 12% 22%;
+    --status-inprogress: 195 100% 50%;
+    --status-completed: 142 60% 45%;
     
-    --column-bg: 0 0% 100%;
-    --board-bg: 210 20% 98%;
+    --column-bg: 220 15% 17%;
+    --board-bg: 220 15% 12%;
     
-    --tag-bg: 217 91% 95%;
-    --tag-text: 217 91% 40%;
-  }
-
-  .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
-
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
-
-    --accent: 217 33% 17%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 217 91% 60%;
-
-    --priority-high: 0 84% 60%;
-    --priority-medium: 36 100% 50%;
-    --priority-low: 142 71% 45%;
+    --tag-bg: 195 100% 20%;
+    --tag-text: 195 100% 70%;
     
-    --status-todo: 217 33% 17%;
-    --status-inprogress: 217 91% 60%;
-    --status-completed: 142 71% 45%;
-    
-    --column-bg: 217 33% 17%;
-    --board-bg: 222 47% 11%;
-    
-    --tag-bg: 217 91% 20%;
-    --tag-text: 217 91% 70%;
+    /* Filter Panel */
+    --filter-bg: 220 15% 14%;
   }
 }
 
