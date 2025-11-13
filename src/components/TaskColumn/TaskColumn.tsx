@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Task, TaskStatus } from '@/types/task';
-import { TaskCard } from './TaskCard';
+import { TaskCard } from '@/components/TaskCard/TaskCard';
 
 interface TaskColumnProps {
   title: string;

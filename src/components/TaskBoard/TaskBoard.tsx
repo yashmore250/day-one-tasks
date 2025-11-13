@@ -1,8 +1,8 @@
 import { Task } from '@/types/task';
-import { TaskColumn } from './TaskColumn';
-import { AddTaskModal } from './AddTaskModal';
-import { SearchFilters } from './SearchFilters';
-import { TaskBoardHeader } from './TaskBoardHeader';
+import { TaskColumn } from '@/components/TaskColumn/TaskColumn';
+import { AddTaskModal } from '@/components/AddTaskModal/AddTaskModal';
+import { SearchFilters } from '@/components/SearchFilters/SearchFilters';
+import { TaskBoardHeader } from '@/components/TaskBoardHeader/TaskBoardHeader';
 import { useTasks } from '@/hooks/useTasks';
 import { useTaskFilters } from '@/hooks/useTaskFilters';
 import { useTaskModal } from '@/hooks/useTaskModal';
